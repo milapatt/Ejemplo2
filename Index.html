@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Trabajo final</title>
+
+	<link rel="stylesheet" href="css/style0.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/jquerygeneral.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" id="icono">
+
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<script src="js/jquery.min.js" type="text/javascript" charset="UTF-8"></script>
+	<script src="js/jquery-latest.js"></script>
+	<script src="js/arriba.js"></script>
+	<script>
+		$(function(){
+
+			$('a[href*=#]').click(function() {
+
+			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+				&& location.hostname == this.hostname) {
+
+					var $target = $(this.hash);
+
+					$target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+
+					if ($target.length) {
+
+						var targetOffset = $target.offset().top;
+
+						$('html,body').animate({scrollTop: targetOffset}, 1000);
+
+						return false;
+					}
+				}
+			});
+		});
+</script>
+
+</head>
+<body>
+	<span class="ir-arriba icon-arrow-up"></span>
+	<header>
+		<div class="menu-bar">
+				<a id="logo-header" href="#">
+					<span class="site-name"><img src="img/logo-peque.png" width="90%"></span>
+			</a>
+			<nav>
+		<input type="checkbox" id="check">
+		<label for="check" class="checkbtn">
+			<i class="fas fa-bars"></i>
+		</label>
+			<ul>
+				<li><a class="active" href="Index.html">Inicio</a></li>
+				<li><a href="Nosotros.html">Nosotros</a>
+					<ul>
+						<li><a href="Nosotros.html">Misión</a></li>
+						<li><a href="Nosotros.html">Visión</a></li>
+					</ul>
+				</li>
+				<li><a href="Categorias.html">Categorías</a>
+					<ul>
+						<li><a href="Categorias.html">Infantil y Juvenil</a></li>
+						<li><a href="Categorias.html">Idiomas</a></li>
+						<li><a href="Categorias.html">Profesional y Técnico</a></li>
+						<li><a href="Categorias.html">Literatura</a></li>
+						<li><a href="Categorias.html">Crecimiento personal</a></li>
+					</ul>
+				</li>
+				<li><a href="Servicios.html">Servicios</a>
+					<ul>
+						<li><a href="Servicios.html">Promociones</a></li>
+						<li><a href="Servicios.html">Eventos</a></li>
+						<li><a href="Servicios.html">Recomendaciones</a></li>
+					</ul>
+				</li>
+				<li><a href="Contacto.html">Contacto</a></li>
+			</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div class="contenedor">
+			<img src="img/fondo1-1.jpg" width="100%">
+			<div class="content-texto">
+				<h2>UN PERÚ QUE LEE, ES UN PAÍS CON CULTURA</h2>
+				<p>Navega por el sitio web</p>
+			</div>
+			<div class="content-1"></div>
+		</div>
+
+	<div class="barra"><h3>¡Todavía estás a tiempo de regalar libros esta Navidad!</p></div>
+
+	<section id="main-content">	
+		<article>
+			<header id="bienvenido">
+				<h1>BIENVENIDO A LIBROS EN LÍNEA</h1>
+			</header>
+				<img src="img/ejemplo4.jpg" alt="aleman" id="img-principal">
+			<div class="content">
+				<p>Librería online y Librería en Lima, Libros En Línea es una tienda Online oficial de libros en Lima Metropolitana.</p>
+				<p>En Libros En Línea podrás encontrar libros peruanos, libros de idiomas, libros profesionales, libros de diseños de moda, mangas, cómics, entre otros.</p>
+				<p>Nuestro enfoque son los libros, por lo que somos expertos en encontrar libros de diferentes autores en todo el mundo al alcance de tu mano.</p>
+				<p>Contamos con más de 10 años en Lima, pronto en otros distritos de Lima-Sur y Lima-Norte.</p>
+			</div>
+
+			<header id="libros">
+				<h1>Libros</h1>
+			</header>
+				<div class="content">
+					<p>5%  de descuento en libros y envíos a casa GRATIS sin pedido mínimo* si eres cliente frecuente</p></div>
+				<div id="contenedor-slider" class="contenedor-slider">
+				<div id="slider" class="slider">
+					<section class="slider_section"><img src="img/libro-joven.jpg" class="slider_img"></section>
+					<section class="slider_section"><img src="img/libro-infantil.jpg" class="slider_img"></section>
+					<section class="slider_section"><img src="img/libro-empresarial.jpg" class="slider_img"></section>
+					<section class="slider_section"><img src="img/libro-peruano.jpg" class="slider_img"></section>
+				</div>
+				<div id="btn-prev" class="btn-prev">&#60;</div>
+				<div id="btn-next" class="btn-next">&#62;</div>
+			</div>
+			<script src="js/slider.js"></script>
+			<div id="social">
+				<a href="Categorias.html">Ver más</a>
+			</div>
+			</div>
+			<header id="novedades">
+				<h1>Novedades</h1>
+			</header>
+			<div class="content">
+				<div class="envoltura">
+
+					<div class="articulo1">
+						<div class="titular">¡Libros que no debes perderte este mes!</div>
+							<img src="img/ejemplo.jpg" width="50%">
+						<div class="observa">No te pierdas nuestras recomendaciones</div>
+					</div>
+
+					<div class="articulo2">
+							<div class="titular">¡Te retamos a leerlos todos, sólo hasta fin de año!</div>
+								<img src="img/ejemplo2.jpg" width="50%">
+							<div class="observa">No te pierdas nuestras recomendaciones</div>
+					</div>
+
+					<div class="articulo3">
+							<div class="titular">¡Todavía estas a tiempo de regalar un libro!</div>
+								<img src="img/ejemplo3.jpg" width="50%" >
+							<div class="observa">No te pierdas nuestras recomendaciones</div>
+					</div>
+				</div>
+			</div>
+			<header class="vendido">
+				<h1>Lo más vendido</h1>
+			</header>
+				<img src="img/icono1.png" alt="" id="img-principal">
+			<div class="content">
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</p>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</p>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</p>
+			</div>
+		</article>
+	</section>	
+
+	<div class="box-social-media">
+		<div class="single-box" style="background: #3b5998">
+			<a href="http://www.facebook.com/"><p>Síguenos en <img src="img/facebook.png" alt=""></p></a>
+		</div>
+		<div class="single-box" style="background: #4099ff">
+			<a href="http://www.twitter.com/"><p>Síguenos en <img src="img/twitter.png" alt=""></p></a>
+		</div>
+		<div class="single-box" style="background: #ff0000">
+			<a href="http://www.youtube.com/"><p>Síguenos en <img src="img/youtube.png" alt=""></p></a>
+		</div>
+	</div>
+
+	<div class="barra-inferior">
+			<div class="icono-solo">
+				<img src="img/icono1.png" alt="">
+				<p>Compra segura</p>
+			</div>
+			<div class="icono-solo">
+				<img src="img/icono2.png" alt="">
+				<p>Envíos gratis</p>
+			</div>
+			<div class="icono-solo">
+				<img src="img/icono3.png" alt="">
+				<p>Establecimiento moderno</p>
+			</div>
+	</div>
+	
+	<footer class="footer">
+		<div class="l-footer">
+			<h1><img src="img/logo-peque.png" alt=""></h1>
+			<p>Libros en línea, tienda Online oficial de libros en Lima.</p>
+		</div>
+		<ul class="r-footer">
+			<li>
+				<h2>Explore</h2>
+				<ul class="box">
+					<li><a href="Index.html">Inicio</a></li>
+					<li><a href="Nosotros.html">Nosotros</a></li>	
+					<li><a href="Contacto.html">Contáctenos</a></li>
+				</ul>
+			</li>
+			<li>
+				<h2>Necesitas ayuda</h2>
+				<ul class="box">
+					<li><a href="Ayuda.html">Devoluciones</a></li>
+					<li><a href="Ayuda.html">Preguntas frecuentes</a></li>
+					<li><a href="Ayuda,html">Consulta con nuestros expertos</a></li>
+				</ul>
+			</li>
+			<li>
+				<h2>Información Legal</h2>
+				<ul class="box">
+					<li><a href="Legal.html">Política de privacidad</a></li>
+					<li><a href="Legal.html">Condiciones de uso</a></li>
+					<li><a href="Legal.html">Política de devoluciones y anulaciones</a></li>
+				</ul>
+			</li>
+		</ul>
+		<div class="b-footer">
+			<p> &copy; Todos los derechos reservados a  Milagros Soncco 2020</p>
+		</div>
+	</footer>
+</body>
+</html>
