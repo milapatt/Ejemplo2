@@ -1,0 +1,245 @@
+*{
+	margin: 0 auto; font-family: arial;
+}
+
+body{
+	font-size: 1em; margin: 0 auto;
+	background-color: #71de10;
+}
+
+header{
+	width: 100%; background: #000; 
+	margin: 0 auto; height: 50px;
+	display: flex;
+}
+
+#btn-menu{
+	display: none; /*ocultar el check box*/
+}
+
+header label{
+	/*display: block;*//*que sea bloque o caja el contenedor del icono*/
+	display: none;
+	/*no queremos ver el icono aun oprque inicialmente se verá en panatallas grandes*/
+	width: 30px;/*dimensiones del contenedor de la imagen*/
+	height: 30px;
+	padding: 10px;
+	border-right: 1px solid #fff;
+}
+
+header label: hover{
+	cursor: pointer; /*manito puntero*/
+	background-color: #D35400;
+}
+
+.menu ul{
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	display: flex;/*los li que esten dentro del ul sean cajas flexibles y como son cajas los coloca en una fila*/
+	flex-direction: row;/*valor por defecto al ser flex*/
+	border-right: 1px solid #fff;
+}
+
+.menu li{
+	width: 100%;
+}
+
+.menu li:hover{
+	background: #D35400;
+}
+
+.menu li a{
+	display: block;/*bloque o caja para poder darle padding*/
+	padding: 17px 20px;/*15px de arriba y abajo y 20 de los costados*/
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	justify-content: center;
+	border-left: 1px solid #fff;
+}
+#envoltura{
+	width: 60%; 
+}
+
+#publicidad{
+	border: 25px solid #fff; width: 100%;
+	box-sizing: border-box;
+	/*height: 306px;*/
+	height: auto; margin: 0 auto;
+	/*font-size: 0;		importante para el fastidioso espacio en blanco interior*/
+	line-height: 0px;
+	position: relative;
+}
+
+section{
+	width: 100%; height: 550px; 
+	border: 1px solid #000; margin: 0 auto;
+	box-sizing: border-box; 
+	background: #fff;
+	
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.parrafo1{
+	background: #9fa19b; width: 30%;
+	height: 500px;
+}
+
+.parrafo2{
+	background: #0A9C0A; width: 30%;
+	height: 500px;
+}
+
+.parrafo3{
+	background: #803c0c; width: 30%;
+	height: 500px;
+}
+
+.parrafo1, .parrafo2, .parrafo3{
+	width: 30%; 
+	margin: 0px auto;
+
+	line-height: 23px;
+	text-align: justify;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	box-sizing: border-box;
+	
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+}
+
+.parrafo1 p, .parrafo2 p, .parrafo3 p{
+	padding: 13px 20px 13px 20px;
+}
+
+.parrafo1 h1, .parrafo2 h1, .parrafo3 h1{
+	width: 100%;
+	background: #000;
+	padding: 12px;
+	margin-top: 0px;
+	box-sizing: border-box;
+}
+
+.parrafo1 h1{
+	color: #D0F5A9;
+}
+
+.parrafo2 h1{
+	color: #0EFF0E;
+}
+
+.ima{
+	display: block;
+	width: 90%;
+	border: 10px solid #fff; 
+}
+
+#logo{
+	position: absolute;
+	top: 50%; left: 41.5%;
+}
+
+#pie{
+	width: 100%; height: 50px;
+	background-color: #000;
+	color: #fff;
+	line-height: 50px;
+	clear: both;
+	text-align: center;
+	padding: 0px 12px 0 12px;
+	box-sizing: border-box;
+}
+
+/***************COLOCAR LAS MEDIDAS QUERIES*****************/
+@media (max-width: 1900px) {
+	.parrafo1, .parrafo2, .parrafo3{
+		font-size: 0.9em;
+	}
+}
+@media (max-width: 1450px) {
+	#envoltura{
+		width: 85%;
+	}
+	section{
+		height: auto; width: 100%;
+	}
+	.parrafo1, .parrafo2{
+		width: 45%; height: 520px;
+		margin-top: 15px;
+		font-size: 0.9em;
+	}
+	.parrafo3{
+		width: 95%; height: 450px;
+	}
+}
+@media (max-width: 1276px) {
+	.parrafo3{
+		width: 95%; height: 480px;
+	}
+}
+@media (max-width: 980px) {
+	section{
+		flex-direction: column;
+	}
+	.parrafo1, .parrafo2, .parrafo3{
+		width: 90%; height: 500px;
+	}
+}
+@media (max-width: 768px) {
+	
+	header label{
+		display: block; 
+	}
+	header{
+		display: block;
+	}
+	label{
+		float: left;
+	}
+	.menu{
+		position: absolute;
+		background: #000;
+		
+		width: 85%;
+		
+		margin-left: -100%;
+		transition: all 0.5s;
+	}
+	.menu ul{
+		flex-direction: column;
+	}
+	.menu li{
+		border-top: 1px solid #fff; width: 100%;
+	}
+	.menu li:hover{
+		background: #803c0c;
+	}
+	#btn-menu:checked ~.menu{
+		margin: 0;
+	}
+}
+@media (max-width: 580px) {
+	#pie{
+		height: 70px;
+		line-height: 30px;
+	}
+}
+@media (max-width: 280px) {
+	.parrafo3{
+		height: 500px;
+	}
+	#pie{
+		font-size: 0.4em;
+		height: auto;
+		line-height: 30px;
+	}
+}
+/***************FIN DE LAS MEDIES QUERIES*******************/
